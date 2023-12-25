@@ -30,7 +30,7 @@ ifneq ($(MAKECMDGOALS),clean)
 endif
 
 simpoint: $(OBJECTS)
-	$(CXX) $(CPPFLAGS) $(OBJECTS) -o simpoint
+	$(CXX) $(CPPFLAGS) $(OBJECTS) -o simpoint -static
 	cp simpoint ../bin/.
 
 .PHONY: clean
